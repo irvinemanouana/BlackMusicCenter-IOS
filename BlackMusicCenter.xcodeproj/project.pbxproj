@@ -13,6 +13,8 @@
 		9D39B9AC1DD341AA00BC069C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D39B9AB1DD341AA00BC069C /* AppDelegate.swift */; };
 		9D39B9B31DD341AA00BC069C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D39B9B21DD341AA00BC069C /* Assets.xcassets */; };
 		9D39B9B61DD341AA00BC069C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D39B9B41DD341AA00BC069C /* LaunchScreen.storyboard */; };
+		9DBEA6EF1DD73EAC007BF50D /* BMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBEA6ED1DD73EAC007BF50D /* BMTableViewCell.swift */; };
+		9DBEA6F01DD73EAC007BF50D /* BMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DBEA6EE1DD73EAC007BF50D /* BMTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9D39B9B21DD341AA00BC069C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D39B9B51DD341AA00BC069C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D39B9B71DD341AA00BC069C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DBEA6ED1DD73EAC007BF50D /* BMTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMTableViewCell.swift; sourceTree = "<group>"; };
+		9DBEA6EE1DD73EAC007BF50D /* BMTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		9D39B9AA1DD341AA00BC069C /* BlackMusicCenter */ = {
 			isa = PBXGroup;
 			children = (
+				9DBEA6EC1DD73E2F007BF50D /* CustomCell */,
 				108093CF1DD48B8A00DF980B /* Views */,
 				9D39B9AB1DD341AA00BC069C /* AppDelegate.swift */,
 				9D39B9B21DD341AA00BC069C /* Assets.xcassets */,
@@ -73,6 +78,15 @@
 				9D39B9B71DD341AA00BC069C /* Info.plist */,
 			);
 			path = BlackMusicCenter;
+			sourceTree = "<group>";
+		};
+		9DBEA6EC1DD73E2F007BF50D /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				9DBEA6ED1DD73EAC007BF50D /* BMTableViewCell.swift */,
+				9DBEA6EE1DD73EAC007BF50D /* BMTableViewCell.xib */,
+			);
+			name = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,7 @@
 			files = (
 				9D39B9B61DD341AA00BC069C /* LaunchScreen.storyboard in Resources */,
 				9D39B9B31DD341AA00BC069C /* Assets.xcassets in Resources */,
+				9DBEA6F01DD73EAC007BF50D /* BMTableViewCell.xib in Resources */,
 				108093D31DD48BCD00DF980B /* BMCHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +164,7 @@
 			files = (
 				108093D21DD48BCD00DF980B /* BMCHomeViewController.swift in Sources */,
 				108093D51DD48D7C00DF980B /* BMCDefaultViewController.swift in Sources */,
+				9DBEA6EF1DD73EAC007BF50D /* BMTableViewCell.swift in Sources */,
 				9D39B9AC1DD341AA00BC069C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
