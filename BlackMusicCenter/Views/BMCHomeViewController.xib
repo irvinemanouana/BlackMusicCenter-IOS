@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BMCHomeViewController" customModule="BlackMusicCenter" customModuleProvider="target">
             <connections>
-                <outlet property="musicTable" destination="Dnj-Hg-Zls" id="dmH-CX-srU"/>
+                <outlet property="tableView" destination="Dnj-Hg-Zls" id="jXN-4I-ghX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
