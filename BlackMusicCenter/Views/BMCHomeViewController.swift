@@ -34,13 +34,17 @@ class BMCHomeViewController: BMCDefaultViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //<#code#>
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let withIdentifier = "musicCell"
+        /*let withIdentifier = "musicCell"
         let cell = self.tableView.dequeueReusableCell(withIdentifier: withIdentifier, for: indexPath) as! BMTableViewCell
-        cell.musicTitle.text = shows[indexPath.row]
-        return cell
+        cell.musicTitle.text = shows[indexPath.row]stom*/
+        let customCell = Bundle.main.loadNibNamed("BMTableViewCell", owner: self, options: nil)?.first as! BMTableViewCell
+        customCell.title.text = "lol"
+        return customCell
     }
     
 }
