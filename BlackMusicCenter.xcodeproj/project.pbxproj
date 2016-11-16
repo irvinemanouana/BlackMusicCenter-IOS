@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10506E0F1DD8EC4C00CACE04 /* BMCWebManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10506E0E1DD8EC4C00CACE04 /* BMCWebManager.swift */; };
 		108093D21DD48BCD00DF980B /* BMCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108093D01DD48BCD00DF980B /* BMCHomeViewController.swift */; };
 		108093D31DD48BCD00DF980B /* BMCHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108093D11DD48BCD00DF980B /* BMCHomeViewController.xib */; };
 		108093D51DD48D7C00DF980B /* BMCDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108093D41DD48D7C00DF980B /* BMCDefaultViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10506E0E1DD8EC4C00CACE04 /* BMCWebManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCWebManager.swift; sourceTree = "<group>"; };
 		108093D01DD48BCD00DF980B /* BMCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCHomeViewController.swift; sourceTree = "<group>"; };
 		108093D11DD48BCD00DF980B /* BMCHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMCHomeViewController.xib; sourceTree = "<group>"; };
 		108093D41DD48D7C00DF980B /* BMCDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCDefaultViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10506E0D1DD8EBB700CACE04 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				10506E0E1DD8EC4C00CACE04 /* BMCWebManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		108093CF1DD48B8A00DF980B /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				9DBEA6EC1DD73E2F007BF50D /* CustomCell */,
+				10506E0D1DD8EBB700CACE04 /* Manager */,
 				108093CF1DD48B8A00DF980B /* Views */,
 				9D39B9AB1DD341AA00BC069C /* AppDelegate.swift */,
 				9D39B9B21DD341AA00BC069C /* Assets.xcassets */,
@@ -239,6 +250,7 @@
 			files = (
 				108093D21DD48BCD00DF980B /* BMCHomeViewController.swift in Sources */,
 				108093D51DD48D7C00DF980B /* BMCDefaultViewController.swift in Sources */,
+				10506E0F1DD8EC4C00CACE04 /* BMCWebManager.swift in Sources */,
 				9DBEA6EF1DD73EAC007BF50D /* BMTableViewCell.swift in Sources */,
 				9D39B9AC1DD341AA00BC069C /* AppDelegate.swift in Sources */,
 			);
@@ -276,6 +288,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -326,6 +339,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -355,6 +369,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 882B0DDEC58A5D9D85C95F2D /* Pods-BlackMusicCenter.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlackMusicCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -368,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8EACF73E13258E9A2911B2B6 /* Pods-BlackMusicCenter.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlackMusicCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
