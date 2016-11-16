@@ -12,9 +12,11 @@ class BMTableViewCell: UITableViewCell {
 
   
     @IBOutlet weak var musicProgress: UIView!
+
     @IBOutlet weak var title: UILabel!
     
     @IBOutlet weak var musicImage: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

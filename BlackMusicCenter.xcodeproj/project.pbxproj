@@ -7,29 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10506E0F1DD8EC4C00CACE04 /* BMCWebManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10506E0E1DD8EC4C00CACE04 /* BMCWebManager.swift */; };
 		108093D21DD48BCD00DF980B /* BMCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108093D01DD48BCD00DF980B /* BMCHomeViewController.swift */; };
 		108093D31DD48BCD00DF980B /* BMCHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108093D11DD48BCD00DF980B /* BMCHomeViewController.xib */; };
 		108093D51DD48D7C00DF980B /* BMCDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108093D41DD48D7C00DF980B /* BMCDefaultViewController.swift */; };
+		10BDB9CC1DDD00DE0076F62B /* BMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDB9CA1DDD00DE0076F62B /* BMTableViewCell.swift */; };
+		10BDB9CD1DDD00DE0076F62B /* BMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10BDB9CB1DDD00DE0076F62B /* BMTableViewCell.xib */; };
+		10BDB9CF1DDD01080076F62B /* evol.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10BDB9CE1DDD01080076F62B /* evol.jpeg */; };
 		9D39B9AC1DD341AA00BC069C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D39B9AB1DD341AA00BC069C /* AppDelegate.swift */; };
 		9D39B9B31DD341AA00BC069C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D39B9B21DD341AA00BC069C /* Assets.xcassets */; };
 		9D39B9B61DD341AA00BC069C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D39B9B41DD341AA00BC069C /* LaunchScreen.storyboard */; };
-		9DE951CF1DD8C9C9000949EF /* BMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE951CD1DD8C9C9000949EF /* BMTableViewCell.swift */; };
-		9DE951D01DD8C9C9000949EF /* BMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DE951CE1DD8C9C9000949EF /* BMTableViewCell.xib */; };
-		9DE951D31DD8CB68000949EF /* evol.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9DE951D21DD8CB68000949EF /* evol.jpeg */; };
+		A954015CAA2EE30051C1C559 /* Pods_BlackMusicCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7490D730A1953F28804B5563 /* Pods_BlackMusicCenter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10506E0E1DD8EC4C00CACE04 /* BMCWebManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCWebManager.swift; sourceTree = "<group>"; };
 		108093D01DD48BCD00DF980B /* BMCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCHomeViewController.swift; sourceTree = "<group>"; };
 		108093D11DD48BCD00DF980B /* BMCHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMCHomeViewController.xib; sourceTree = "<group>"; };
 		108093D41DD48D7C00DF980B /* BMCDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCDefaultViewController.swift; sourceTree = "<group>"; };
+		10BDB9CA1DDD00DE0076F62B /* BMTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMTableViewCell.swift; sourceTree = "<group>"; };
+		10BDB9CB1DDD00DE0076F62B /* BMTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTableViewCell.xib; sourceTree = "<group>"; };
+		10BDB9CE1DDD01080076F62B /* evol.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = evol.jpeg; sourceTree = "<group>"; };
+		7490D730A1953F28804B5563 /* Pods_BlackMusicCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackMusicCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		882B0DDEC58A5D9D85C95F2D /* Pods-BlackMusicCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMusicCenter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackMusicCenter/Pods-BlackMusicCenter.debug.xcconfig"; sourceTree = "<group>"; };
+		8EACF73E13258E9A2911B2B6 /* Pods-BlackMusicCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMusicCenter.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackMusicCenter/Pods-BlackMusicCenter.release.xcconfig"; sourceTree = "<group>"; };
 		9D39B9A81DD341AA00BC069C /* BlackMusicCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackMusicCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D39B9AB1DD341AA00BC069C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D39B9B21DD341AA00BC069C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D39B9B51DD341AA00BC069C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D39B9B71DD341AA00BC069C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DE951CD1DD8C9C9000949EF /* BMTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMTableViewCell.swift; sourceTree = "<group>"; };
-		9DE951CE1DD8C9C9000949EF /* BMTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTableViewCell.xib; sourceTree = "<group>"; };
-		9DE951D21DD8CB68000949EF /* evol.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = evol.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,12 +43,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A954015CAA2EE30051C1C559 /* Pods_BlackMusicCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10506E0D1DD8EBB700CACE04 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				10506E0E1DD8EC4C00CACE04 /* BMCWebManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		108093CF1DD48B8A00DF980B /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,11 +68,38 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		10BDB9C81DDD00DE0076F62B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				10BDB9C91DDD00DE0076F62B /* TableViewCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		10BDB9C91DDD00DE0076F62B /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				10BDB9CA1DDD00DE0076F62B /* BMTableViewCell.swift */,
+				10BDB9CB1DDD00DE0076F62B /* BMTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		24D35044086D5FA966047828 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7490D730A1953F28804B5563 /* Pods_BlackMusicCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D39B99F1DD341AA00BC069C = {
 			isa = PBXGroup;
 			children = (
 				9D39B9AA1DD341AA00BC069C /* BlackMusicCenter */,
 				9D39B9A91DD341AA00BC069C /* Products */,
+				E60CD08907BBFA37EBCCA88E /* Pods */,
+				24D35044086D5FA966047828 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,9 +114,10 @@
 		9D39B9AA1DD341AA00BC069C /* BlackMusicCenter */ = {
 			isa = PBXGroup;
 			children = (
-				9DE951D11DD8CB0C000949EF /* pictures */,
-				9DBEA6EC1DD73E2F007BF50D /* CustomCell */,
+				10BDB9C81DDD00DE0076F62B /* Components */,
+				10506E0D1DD8EBB700CACE04 /* Manager */,
 				108093CF1DD48B8A00DF980B /* Views */,
+				10BDB9CE1DDD01080076F62B /* evol.jpeg */,
 				9D39B9AB1DD341AA00BC069C /* AppDelegate.swift */,
 				9D39B9B21DD341AA00BC069C /* Assets.xcassets */,
 				9D39B9B41DD341AA00BC069C /* LaunchScreen.storyboard */,
@@ -83,21 +126,13 @@
 			path = BlackMusicCenter;
 			sourceTree = "<group>";
 		};
-		9DBEA6EC1DD73E2F007BF50D /* CustomCell */ = {
+		E60CD08907BBFA37EBCCA88E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9DE951CD1DD8C9C9000949EF /* BMTableViewCell.swift */,
-				9DE951CE1DD8C9C9000949EF /* BMTableViewCell.xib */,
+				882B0DDEC58A5D9D85C95F2D /* Pods-BlackMusicCenter.debug.xcconfig */,
+				8EACF73E13258E9A2911B2B6 /* Pods-BlackMusicCenter.release.xcconfig */,
 			);
-			name = CustomCell;
-			sourceTree = "<group>";
-		};
-		9DE951D11DD8CB0C000949EF /* pictures */ = {
-			isa = PBXGroup;
-			children = (
-				9DE951D21DD8CB68000949EF /* evol.jpeg */,
-			);
-			name = pictures;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D39B9BA1DD341AA00BC069C /* Build configuration list for PBXNativeTarget "BlackMusicCenter" */;
 			buildPhases = (
+				254DBEE886D71A8D69587CAB /* [CP] Check Pods Manifest.lock */,
 				9D39B9A41DD341AA00BC069C /* Sources */,
 				9D39B9A51DD341AA00BC069C /* Frameworks */,
 				9D39B9A61DD341AA00BC069C /* Resources */,
+				12C16481202313423942FA93 /* [CP] Embed Pods Frameworks */,
+				2EAE55E823B4E37A73297900 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,13 +199,61 @@
 			files = (
 				9D39B9B61DD341AA00BC069C /* LaunchScreen.storyboard in Resources */,
 				9D39B9B31DD341AA00BC069C /* Assets.xcassets in Resources */,
-				9DE951D31DD8CB68000949EF /* evol.jpeg in Resources */,
-				9DE951D01DD8C9C9000949EF /* BMTableViewCell.xib in Resources */,
+				10BDB9CF1DDD01080076F62B /* evol.jpeg in Resources */,
+				10BDB9CD1DDD00DE0076F62B /* BMTableViewCell.xib in Resources */,
 				108093D31DD48BCD00DF980B /* BMCHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12C16481202313423942FA93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackMusicCenter/Pods-BlackMusicCenter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		254DBEE886D71A8D69587CAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2EAE55E823B4E37A73297900 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackMusicCenter/Pods-BlackMusicCenter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D39B9A41DD341AA00BC069C /* Sources */ = {
@@ -176,7 +262,8 @@
 			files = (
 				108093D21DD48BCD00DF980B /* BMCHomeViewController.swift in Sources */,
 				108093D51DD48D7C00DF980B /* BMCDefaultViewController.swift in Sources */,
-				9DE951CF1DD8C9C9000949EF /* BMTableViewCell.swift in Sources */,
+				10BDB9CC1DDD00DE0076F62B /* BMTableViewCell.swift in Sources */,
+				10506E0F1DD8EC4C00CACE04 /* BMCWebManager.swift in Sources */,
 				9D39B9AC1DD341AA00BC069C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +300,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -263,6 +351,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -290,7 +379,9 @@
 		};
 		9D39B9BB1DD341AA00BC069C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882B0DDEC58A5D9D85C95F2D /* Pods-BlackMusicCenter.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlackMusicCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -302,7 +393,9 @@
 		};
 		9D39B9BC1DD341AA00BC069C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EACF73E13258E9A2911B2B6 /* Pods-BlackMusicCenter.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlackMusicCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
