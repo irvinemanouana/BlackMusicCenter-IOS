@@ -13,6 +13,8 @@ class BMCHomeViewController: BMCDefaultViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    let musicWeb: BMCWebManager = BMCWebManager.shared;
+    
     let cellId:String = "BMCMusicCell"
 
     var musics: [BMCMusic] = []
@@ -25,7 +27,7 @@ class BMCHomeViewController: BMCDefaultViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         
-        BMCWebManager.shared.getMusicList().responseJSON { response in
+        self.musicWeb.getMusicList().responseJSON { response in
             if let result = response.result.value {
                 let jsonResult = JSON(result);
                 for value in jsonResult["result"].array! {
@@ -68,4 +70,15 @@ extension BMCHomeViewController : UITableViewDelegate, UITableViewDataSource {
         return cell;
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let music:BMCMusic = self.musics[indexPath.row];
+        print("Select music : \(music.title) -- \(music.id)");
+        self.musicWeb.downloadMusic(music)
+            .downloadProgress { progress in
+                print("Download Progress: \(progress.fractionCompleted)")
+            }
+            .responseData { response in
+                print("Receive Data");
+            }
+    }
 }

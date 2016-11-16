@@ -26,6 +26,16 @@ class BMCWebManager {
     
     }
     
+    public func downloadMusic(_ music: BMCMusic) -> DownloadRequest {
+        let url = "http://\(self.ip):\(self.port)/api/audio/\(music.id!)";
+        return download(url);
+    }
+    
+    private func download(_ url: String) -> DownloadRequest {
+        print("New download : \(url)");
+        return Alamofire.download(url);
+    }
+    
     private func execute(_ url: String) -> DataRequest {
         print("New request : \(url)");
         return Alamofire.request(url);
