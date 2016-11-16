@@ -8,15 +8,18 @@
 
 import UIKit
 import SwiftyJSON
+import AVFoundation
 
 class BMCHomeViewController: BMCDefaultViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let musicWeb: BMCWebManager = BMCWebManager.shared;
+    private var player:AVAudioPlayer?
+    
+    private let musicWeb: BMCWebManager = BMCWebManager.shared;
     
     let cellId:String = "BMCMusicCell"
-
+    
     var musics: [BMCMusic] = []
     
     override func viewDidLoad() {
@@ -34,10 +37,37 @@ class BMCHomeViewController: BMCDefaultViewController {
                     self.musics.append(BMCMusicFactory.getMusicFromJSON(value.object as! [String : AnyObject]));
                 }
                 
-                DispatchQueue.main.async(execute: { 
+                DispatchQueue.main.async(execute: {
                     self.tableView.reloadData();
                 })
             }
+        }
+    }
+    
+    func downloadMusic(_ music: BMCMusic) {
+        self.musicWeb.downloadMusic(music)
+            .downloadProgress { progress in
+                print("Download Progress: \(progress.fractionCompleted)")
+            }
+            .responseData { response in
+                switch response.result {
+                case .success(let data):
+                    print("Sucess Receive Data");
+                    DispatchQueue.main.async(execute: {
+                        self.playSound(data: data);
+                    })
+                case .failure:
+                    print("Fail \(response)");
+                }
+        }
+    }
+    
+    func playSound(data: Data) {
+        if let player = try? AVAudioPlayer(data: data) {
+            player.play();
+            player.numberOfLoops = 1;
+            player.currentTime = 10;
+            self.player  = player;
         }
     }
 }
@@ -72,13 +102,6 @@ extension BMCHomeViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let music:BMCMusic = self.musics[indexPath.row];
-        print("Select music : \(music.title) -- \(music.id)");
-        self.musicWeb.downloadMusic(music)
-            .downloadProgress { progress in
-                print("Download Progress: \(progress.fractionCompleted)")
-            }
-            .responseData { response in
-                print("Receive Data");
-            }
+        self.downloadMusic(music);
     }
 }
