@@ -15,6 +15,9 @@ class BMCDefaultViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        super.viewDidLoad();
+
+        self.title = "Black Music Center";
         self.view.backgroundColor = backgroundColor;
     }
     

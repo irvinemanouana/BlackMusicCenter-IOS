@@ -18,13 +18,13 @@ class BMCHomeViewController: BMCDefaultViewController {
     var musics: [BMCMusic] = []
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "player"
-
+        super.viewDidLoad();
         self.initTableView();
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        
         BMCWebManager.shared.getMusicList().responseJSON { response in
             if let result = response.result.value {
                 let jsonResult = JSON(result);
