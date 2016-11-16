@@ -11,11 +11,14 @@ import SwiftyJSON
 
 class BMCHomeViewController: BMCDefaultViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var musicTable: UITableView!
+    var shows : [String] = ["Luke Cage","Dardevil","Orange is the new Black","Narcos","Sens8","Strange Things","Sherlock","Jessica Jones", "Iron Fist"]
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "player"
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
@@ -34,7 +37,7 @@ class BMCHomeViewController: BMCDefaultViewController, UITableViewDelegate, UITa
         //<#code#>
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return shows.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -45,8 +48,10 @@ class BMCHomeViewController: BMCDefaultViewController, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let withIdentifier = "musicCell"
-        let cell = musicTable.dequeueReusableCell(withIdentifier: withIdentifier, for: indexPath) as! BMTableViewCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: withIdentifier, for: indexPath) as! BMTableViewCell
+        cell.musicTitle.text = shows[indexPath.row]
         return cell
     }
     
