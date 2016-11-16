@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class BMCHomeViewController: BMCDefaultViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -19,8 +20,19 @@ class BMCHomeViewController: BMCDefaultViewController, UITableViewDelegate, UITa
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
-        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        BMCWebManager.shared.getMusicList().responseJSON { response in
+            if let result = response.result.value {
+                let jsonResult = JSON(result);
+                for value in jsonResult["result"].array! {
+                    print("Music : \(value)");
+                }
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         //<#code#>
     }
