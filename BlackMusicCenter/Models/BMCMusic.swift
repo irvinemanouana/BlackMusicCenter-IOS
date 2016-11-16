@@ -11,9 +11,12 @@ import Foundation
 
 class BMCMusic : NSObject {
     
-    var title:String!
+    let id:String!
     
-    init(title: String) {
-        self.title = title
+    let title:String!
+    
+    init(id: String, title: String) {
+        self.id = id;
+        self.title = title;
     }
 }
