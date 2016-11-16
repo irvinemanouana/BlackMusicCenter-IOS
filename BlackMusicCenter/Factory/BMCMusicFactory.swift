@@ -12,8 +12,9 @@ import Foundation
 class BMCMusicFactory : NSObject {
     
     class func getMusicFromJSON(_ data: [String:AnyObject]) -> BMCMusic {
+        let id:String = data["_id"] as! String;
         let title:String = data["title"] as! String;
-        return BMCMusic(title: title);
+        return BMCMusic(id: id, title: title);
     }
     
 }
