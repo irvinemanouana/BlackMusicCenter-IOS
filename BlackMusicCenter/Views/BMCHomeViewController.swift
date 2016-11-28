@@ -18,9 +18,12 @@ class BMCHomeViewController: BMCDefaultViewController {
     
     private let musicWeb: BMCWebManager = BMCWebManager.shared;
     
+    @IBOutlet weak var musicArtistLabel: UILabel!
+    @IBOutlet weak var musicTitleLabel: UILabel!
     let cellId:String = "BMCMusicCell"
     
     var musics: [BMCMusic] = []
+    var currentSong : Int!
     
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -29,7 +32,7 @@ class BMCHomeViewController: BMCDefaultViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
-        
+       
         self.musicWeb.getMusicList().responseJSON { response in
             if let result = response.result.value {
                 let jsonResult = JSON(result);
@@ -55,13 +58,26 @@ class BMCHomeViewController: BMCDefaultViewController {
                     print("Sucess Receive Data");
                     DispatchQueue.main.async(execute: {
                         self.playSound(data: data);
+                        self.musicTitleLabel.text = music.title;
+                        self.musicArtistLabel.text = music.artist;
                     })
                 case .failure:
                     print("Fail \(response)");
                 }
         }
     }
+
+    @IBAction func nextButton(_ sender: Any) {
+        nextMusic()
+    }
     
+    @IBAction func playButton(_ sender: Any) {
+       lauchMusic()
+    }
+
+    @IBAction func previewsButton(_ sender: Any) {
+        previewMusic()
+    }
     func playSound(data: Data) {
         if let player = try? AVAudioPlayer(data: data) {
             player.play();
@@ -69,6 +85,24 @@ class BMCHomeViewController: BMCDefaultViewController {
             player.currentTime = 10;
             self.player  = player;
         }
+    }
+    
+    func lauchMusic()  {
+        
+        let music:BMCMusic = self.musics[0];
+        currentSong = 0
+        self.downloadMusic(music);
+    }
+    func nextMusic()  {
+        let music:BMCMusic = self.musics[currentSong+1];
+        currentSong = currentSong+1
+        self.downloadMusic(music);
+    }
+    func previewMusic() {
+        
+        let music:BMCMusic = self.musics[currentSong-1];
+        currentSong = currentSong-1
+        self.downloadMusic(music);
     }
 }
 
@@ -96,11 +130,13 @@ extension BMCHomeViewController : UITableViewDelegate, UITableViewDataSource {
         let music:BMCMusic = self.musics[indexPath.row];
         
         cell.title.text = music.title;
-        
+        //cell.artistLabel.text = music.artist;
         if let url = URL(string: music.thumbnail) {
             do {
                 let data = try Data(contentsOf: url);
                 cell.musicImage.image = UIImage(data: data);
+                cell.artistLabel.text = music.artist;
+                cell.genreLabel.text = music.genre;
             }
             catch {
                 print(error.localizedDescription);
@@ -112,6 +148,7 @@ extension BMCHomeViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let music:BMCMusic = self.musics[indexPath.row];
+        currentSong = indexPath.row
         self.downloadMusic(music);
     }
 }
