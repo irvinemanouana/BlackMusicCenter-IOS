@@ -22,15 +22,19 @@ class BMCWebManager {
         return instance;
     }()
     
+    var url:String {
+        return "\(self.ip):\(self.port)";
+    }
+    
     public func getMusicList() -> DataRequest {
         
-        let url = "http://\(self.ip):\(self.port)/api/audio/all";
+        let url = "http://\(self.url)/api/audio/all";
         return self.execute(url);
     
     }
     
     public func downloadMusic(_ music: BMCMusic) -> DataRequest {
-        let url = "http://\(self.ip):\(self.port)/api/audio/\(music.id!)";
+        let url = "http://\(self.url)/api/audio/\(music.id!)";
         return execute(url);
     }
     
