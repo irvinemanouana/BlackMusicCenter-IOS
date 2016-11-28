@@ -11,8 +11,11 @@ import Alamofire
 import SwiftyJSON
 
 class BMCWebManager {
-    private let ip = "192.168.1.76";
-    private let port = "3000";
+    //private let ip = "192.168.1.76";
+    //private let port = "3000";
+    
+    private let ip = "138.68.128.170";
+    private let port = "80";
     
     static let shared : BMCWebManager = {
         let instance = BMCWebManager();
