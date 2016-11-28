@@ -97,6 +97,16 @@ extension BMCHomeViewController : UITableViewDelegate, UITableViewDataSource {
         
         cell.title.text = music.title;
         
+        if let url = URL(string: music.thumbnail) {
+            do {
+                let data = try Data(contentsOf: url);
+                cell.musicImage.image = UIImage(data: data);
+            }
+            catch {
+                print(error.localizedDescription);
+            }
+        }
+        
         return cell;
     }
     
