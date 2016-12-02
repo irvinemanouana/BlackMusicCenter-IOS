@@ -72,7 +72,7 @@ class BMCHomeViewController: BMCDefaultViewController {
     }
     
     @IBAction func playButton(_ sender: Any) {
-       lauchMusic()
+            lauchMusic()
     }
 
     @IBAction func previewsButton(_ sender: Any) {
@@ -94,9 +94,14 @@ class BMCHomeViewController: BMCDefaultViewController {
         self.downloadMusic(music);
     }
     func nextMusic()  {
-        let music:BMCMusic = self.musics[currentSong+1];
-        currentSong = currentSong+1
-        self.downloadMusic(music);
+        if currentSong != nil{
+            let music:BMCMusic = self.musics[currentSong+1];
+            currentSong = currentSong+1
+            self.downloadMusic(music);
+        }
+        else{
+            lauchMusic()
+        }
     }
     func previewMusic() {
         

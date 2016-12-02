@@ -26,24 +26,16 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="521"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oi9-W4-T0M">
-                    <rect key="frame" x="293" y="617" width="66" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTN-Rb-Qrr">
+                    <rect key="frame" x="55" y="600" width="75" height="47"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Suivant"/>
-                    <connections>
-                        <action selector="nextButton:" destination="-1" eventType="touchUpInside" id="w17-sv-tzM"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTN-Rb-Qrr">
-                    <rect key="frame" x="16" y="617" width="79" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Précedent"/>
+                    <state key="normal" image="previous-track.png"/>
                     <connections>
                         <action selector="previewsButton:" destination="-1" eventType="touchUpInside" id="CuY-Pm-ZKW"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uso-qC-qo1">
-                    <rect key="frame" x="164" y="617" width="46" height="30"/>
+                    <rect key="frame" x="164" y="608" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Play"/>
                     <connections>
@@ -62,6 +54,14 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oi9-W4-T0M">
+                    <rect key="frame" x="241" y="600" width="95" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="next-track-button.png"/>
+                    <connections>
+                        <action selector="nextButton:" destination="-1" eventType="touchUpInside" id="w17-sv-tzM"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -79,4 +79,8 @@
             <point key="canvasLocation" x="102.5" y="85.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="next-track-button.png" width="64" height="64"/>
+        <image name="previous-track.png" width="64" height="64"/>
+    </resources>
 </document>
