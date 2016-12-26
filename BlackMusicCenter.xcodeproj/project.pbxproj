@@ -16,6 +16,7 @@
 		10BDB9CF1DDD01080076F62B /* evol.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10BDB9CE1DDD01080076F62B /* evol.jpeg */; };
 		10BDB9D21DDD069D0076F62B /* BMCMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDB9D11DDD069D0076F62B /* BMCMusic.swift */; };
 		10BDB9D51DDD0AD70076F62B /* BMCMusicFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDB9D41DDD0AD70076F62B /* BMCMusicFactory.swift */; };
+		10EE60ED1E11C5D400D71157 /* BlackMusicCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE60EC1E11C5D400D71157 /* BlackMusicCenterTests.swift */; };
 		9D037CCC1DEC881400DA7D8E /* Play-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D037CCB1DEC881400DA7D8E /* Play-50.png */; };
 		9D39B9AC1DD341AA00BC069C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D39B9AB1DD341AA00BC069C /* AppDelegate.swift */; };
 		9D39B9B31DD341AA00BC069C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D39B9B21DD341AA00BC069C /* Assets.xcassets */; };
@@ -24,6 +25,16 @@
 		9DA36AB11DED73D300C31309 /* previous-track.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA36AAF1DED73D300C31309 /* previous-track.png */; };
 		A954015CAA2EE30051C1C559 /* Pods_BlackMusicCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7490D730A1953F28804B5563 /* Pods_BlackMusicCenter.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10EE60EF1E11C5D400D71157 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D39B9A01DD341AA00BC069C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D39B9A71DD341AA00BC069C;
+			remoteInfo = BlackMusicCenter;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		10506E0E1DD8EC4C00CACE04 /* BMCWebManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCWebManager.swift; sourceTree = "<group>"; };
@@ -35,6 +46,9 @@
 		10BDB9CE1DDD01080076F62B /* evol.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = evol.jpeg; sourceTree = "<group>"; };
 		10BDB9D11DDD069D0076F62B /* BMCMusic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCMusic.swift; sourceTree = "<group>"; };
 		10BDB9D41DDD0AD70076F62B /* BMCMusicFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCMusicFactory.swift; sourceTree = "<group>"; };
+		10EE60EA1E11C5D400D71157 /* BlackMusicCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackMusicCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10EE60EC1E11C5D400D71157 /* BlackMusicCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackMusicCenterTests.swift; sourceTree = "<group>"; };
+		10EE60EE1E11C5D400D71157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7490D730A1953F28804B5563 /* Pods_BlackMusicCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackMusicCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		882B0DDEC58A5D9D85C95F2D /* Pods-BlackMusicCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMusicCenter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackMusicCenter/Pods-BlackMusicCenter.debug.xcconfig"; sourceTree = "<group>"; };
 		8EACF73E13258E9A2911B2B6 /* Pods-BlackMusicCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMusicCenter.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackMusicCenter/Pods-BlackMusicCenter.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +63,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		10EE60E71E11C5D400D71157 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D39B9A51DD341AA00BC069C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,6 +132,15 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		10EE60EB1E11C5D400D71157 /* BlackMusicCenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				10EE60EC1E11C5D400D71157 /* BlackMusicCenterTests.swift */,
+				10EE60EE1E11C5D400D71157 /* Info.plist */,
+			);
+			path = BlackMusicCenterTests;
+			sourceTree = "<group>";
+		};
 		24D35044086D5FA966047828 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				9D39B9AA1DD341AA00BC069C /* BlackMusicCenter */,
+				10EE60EB1E11C5D400D71157 /* BlackMusicCenterTests */,
 				9D39B9A91DD341AA00BC069C /* Products */,
 				E60CD08907BBFA37EBCCA88E /* Pods */,
 				24D35044086D5FA966047828 /* Frameworks */,
@@ -143,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				9D39B9A81DD341AA00BC069C /* BlackMusicCenter.app */,
+				10EE60EA1E11C5D400D71157 /* BlackMusicCenterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,6 +209,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		10EE60E91E11C5D400D71157 /* BlackMusicCenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10EE60F31E11C5D400D71157 /* Build configuration list for PBXNativeTarget "BlackMusicCenterTests" */;
+			buildPhases = (
+				10EE60E61E11C5D400D71157 /* Sources */,
+				10EE60E71E11C5D400D71157 /* Frameworks */,
+				10EE60E81E11C5D400D71157 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10EE60F01E11C5D400D71157 /* PBXTargetDependency */,
+			);
+			name = BlackMusicCenterTests;
+			productName = BlackMusicCenterTests;
+			productReference = 10EE60EA1E11C5D400D71157 /* BlackMusicCenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9D39B9A71DD341AA00BC069C /* BlackMusicCenter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D39B9BA1DD341AA00BC069C /* Build configuration list for PBXNativeTarget "BlackMusicCenter" */;
@@ -203,10 +253,15 @@
 		9D39B9A01DD341AA00BC069C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Manouana;
 				TargetAttributes = {
+					10EE60E91E11C5D400D71157 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9D39B9A71DD341AA00BC069C;
+					};
 					9D39B9A71DD341AA00BC069C = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
@@ -227,11 +282,19 @@
 			projectRoot = "";
 			targets = (
 				9D39B9A71DD341AA00BC069C /* BlackMusicCenter */,
+				10EE60E91E11C5D400D71157 /* BlackMusicCenterTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		10EE60E81E11C5D400D71157 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D39B9A61DD341AA00BC069C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +361,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		10EE60E61E11C5D400D71157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10EE60ED1E11C5D400D71157 /* BlackMusicCenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D39B9A41DD341AA00BC069C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,6 +385,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		10EE60F01E11C5D400D71157 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D39B9A71DD341AA00BC069C /* BlackMusicCenter */;
+			targetProxy = 10EE60EF1E11C5D400D71157 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		9D39B9B41DD341AA00BC069C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -326,6 +405,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		10EE60F11E11C5D400D71157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BlackMusicCenterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicolas.paradise.fr.BlackMusicCenterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackMusicCenter.app/BlackMusicCenter";
+			};
+			name = Debug;
+		};
+		10EE60F21E11C5D400D71157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BlackMusicCenterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicolas.paradise.fr.BlackMusicCenterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackMusicCenter.app/BlackMusicCenter";
+			};
+			name = Release;
+		};
 		9D39B9B81DD341AA00BC069C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -456,6 +563,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		10EE60F31E11C5D400D71157 /* Build configuration list for PBXNativeTarget "BlackMusicCenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10EE60F11E11C5D400D71157 /* Debug */,
+				10EE60F21E11C5D400D71157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9D39B9A31DD341AA00BC069C /* Build configuration list for PBXProject "BlackMusicCenter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
