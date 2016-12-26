@@ -9,3 +9,11 @@ target 'BlackMusicCenter' do
   pod 'CircularSpinner'
 
 end
+
+target 'BlackMusicCenterTests' do
+  use_frameworks!
+
+  pod 'Alamofire', '~> 4.0'
+  pod 'SwiftyJSON'
+  pod 'CircularSpinner'
+end
