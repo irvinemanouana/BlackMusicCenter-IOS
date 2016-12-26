@@ -23,7 +23,7 @@ class BMCHomeViewController: BMCDefaultViewController {
     let cellId:String = "BMCMusicCell"
     
     var musics: [BMCMusic] = []
-    var currentSong : Int!
+    var indexSong: Int = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -41,10 +41,40 @@ class BMCHomeViewController: BMCDefaultViewController {
                 }
                 
                 DispatchQueue.main.async(execute: {
+                    let music:BMCMusic = self.musics[0];
+                    self.setPreviewMusic(music);
                     self.tableView.reloadData();
                 })
             }
         }
+    }
+    
+    func setPlayMusic(_ music: BMCMusic) {
+        self.setPreviewMusic(music);
+        self.downloadMusic(music);
+    }
+    
+    func setPreviewMusic(_ music: BMCMusic) {
+        self.musicTitleLabel.text = music.title;
+        self.musicArtistLabel.text = music.artist;
+    }
+    
+    func increment() -> BMCMusic {
+        self.indexSong += 1;
+        if self.indexSong > self.musics.count - 1 {
+            self.indexSong = 0;
+        }
+        
+        return self.musics[self.indexSong];
+    }
+    
+    func decrement() -> BMCMusic {
+        self.indexSong -= 1;
+        if self.indexSong < 0 {
+            self.indexSong = self.musics.count - 1;
+        }
+
+        return self.musics[self.indexSong];
     }
     
     func downloadMusic(_ music: BMCMusic) {
@@ -67,47 +97,45 @@ class BMCHomeViewController: BMCDefaultViewController {
         }
     }
 
-    @IBAction func nextButton(_ sender: Any) {
-        nextMusic()
+    @IBAction func nextButton(_ sender: UIButton) {
+        let music:BMCMusic = self.increment();
+        self.setPlayMusic(music);
     }
     
-    @IBAction func playButton(_ sender: Any) {
-            lauchMusic()
+    @IBAction func playButton(_ sender: UIButton) {
+        if let player = self.player {
+            if player.isPlaying {
+                player.pause();
+            } else {
+                player.play();
+            }
+        } else {
+            let music:BMCMusic = self.musics[self.indexSong];
+            self.setPlayMusic(music);
+        }
     }
 
-    @IBAction func previewsButton(_ sender: Any) {
-        previewMusic()
+    @IBAction func previewsButton(_ sender: UIButton) {
+        let music:BMCMusic = self.decrement();
+        self.setPlayMusic(music);
     }
+
     func playSound(data: Data) {
         if let player = try? AVAudioPlayer(data: data) {
             player.play();
             player.numberOfLoops = 1;
             player.currentTime = 10;
             self.player  = player;
+            if let duration = self.player?.duration {
+                print("Duration : \(duration)");
+            }
         }
     }
     
-    func lauchMusic()  {
-        
-        let music:BMCMusic = self.musics[0];
-        currentSong = 0
-        self.downloadMusic(music);
-    }
-    func nextMusic()  {
-        if currentSong != nil{
-            let music:BMCMusic = self.musics[currentSong+1];
-            currentSong = currentSong+1
-            self.downloadMusic(music);
+    func pauseSound() {
+        if let player = self.player {
+            player.pause();
         }
-        else{
-            lauchMusic()
-        }
-    }
-    func previewMusic() {
-        
-        let music:BMCMusic = self.musics[currentSong-1];
-        currentSong = currentSong-1
-        self.downloadMusic(music);
     }
 }
 
@@ -126,7 +154,7 @@ extension BMCHomeViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
+        return 100.0;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -153,7 +181,7 @@ extension BMCHomeViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let music:BMCMusic = self.musics[indexPath.row];
-        currentSong = indexPath.row
-        self.downloadMusic(music);
+        self.indexSong = indexPath.row;
+        self.setPlayMusic(music);
     }
 }
