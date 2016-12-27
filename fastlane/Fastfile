@@ -1,0 +1,6 @@
+default_platform :ios
+
+lane :blackmusiccenter do
+  cocoapods
+  scan()
+end
