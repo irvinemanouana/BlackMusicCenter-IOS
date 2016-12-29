@@ -1,5 +1,8 @@
-osx_image: xcode8.0
 language: objective-c
+osx_image: xcode8
+xcode_project: BlackMusicCenter.xcworkspace
+xcode_scheme: BlackMusicCenter
+bundler_args: --retry 5
 branches:
   only:
     - develop
@@ -9,5 +12,6 @@ notifications:
 before_install:
   - gem install bundle
   - bundle install && brew bundle
+  - pod install
 script:
   - bundle exec fastlane blackmusiccenter
