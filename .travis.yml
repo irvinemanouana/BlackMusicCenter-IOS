@@ -12,6 +12,6 @@ notifications:
 before_install:
   - gem install bundle
   - bundle install && brew bundle
-  - pod install
+  - pod update
 script:
   - bundle exec fastlane blackmusiccenter
