@@ -2,5 +2,11 @@ default_platform :ios
 
 lane :blackmusiccenter do
   cocoapods
-  scan()
+  scan(
+    scheme: 'BlackMusicCenter',
+    devices: ["iPhone SE"],
+    code_coverage: true,
+    clean: true,
+    output_types: "html"
+  )
 end
