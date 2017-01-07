@@ -9,4 +9,10 @@ lane :blackmusiccenter do
     clean: true,
     output_types: "html"
   )
+  xcov(
+    workspace: "BlackMusicCenter.xcworkspace",
+    scheme: "BlackMusicCenter",
+    output_directory: "fastlane/xcov_output",
+    ignore_file_path: "fastlane/.xcovignore"
+  )
 end

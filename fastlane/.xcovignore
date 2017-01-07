@@ -1,0 +1,7 @@
+# Ignore AppDelegate
+- AppDelegate.swift
+
+
+# Exclude all dependencies
+- Pods
+- Carthage/Checkouts
