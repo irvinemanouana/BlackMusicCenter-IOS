@@ -11,6 +11,8 @@
 		104FD0601E211B5500A23C03 /* BMCMusicFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FD05F1E211B5500A23C03 /* BMCMusicFactoryTests.swift */; };
 		104FD0631E212B0D00A23C03 /* BMCUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FD0621E212B0D00A23C03 /* BMCUIImage.swift */; };
 		104FD0651E212EAB00A23C03 /* BMCUIImagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FD0641E212EAB00A23C03 /* BMCUIImagTests.swift */; };
+		104FD0671E21385D00A23C03 /* BMCAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FD0661E21385D00A23C03 /* BMCAudioPlayer.swift */; };
+		104FD0691E21425500A23C03 /* BMCAudioPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FD0681E21425500A23C03 /* BMCAudioPlayerTests.swift */; };
 		10506E0F1DD8EC4C00CACE04 /* BMCWebManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10506E0E1DD8EC4C00CACE04 /* BMCWebManager.swift */; };
 		108093D21DD48BCD00DF980B /* BMCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108093D01DD48BCD00DF980B /* BMCHomeViewController.swift */; };
 		108093D31DD48BCD00DF980B /* BMCHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108093D11DD48BCD00DF980B /* BMCHomeViewController.xib */; };
@@ -46,6 +48,8 @@
 		104FD05F1E211B5500A23C03 /* BMCMusicFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCMusicFactoryTests.swift; sourceTree = "<group>"; };
 		104FD0621E212B0D00A23C03 /* BMCUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCUIImage.swift; sourceTree = "<group>"; };
 		104FD0641E212EAB00A23C03 /* BMCUIImagTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCUIImagTests.swift; sourceTree = "<group>"; };
+		104FD0661E21385D00A23C03 /* BMCAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCAudioPlayer.swift; sourceTree = "<group>"; };
+		104FD0681E21425500A23C03 /* BMCAudioPlayerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCAudioPlayerTests.swift; sourceTree = "<group>"; };
 		10506E0E1DD8EC4C00CACE04 /* BMCWebManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCWebManager.swift; sourceTree = "<group>"; };
 		108093D01DD48BCD00DF980B /* BMCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCHomeViewController.swift; sourceTree = "<group>"; };
 		108093D11DD48BCD00DF980B /* BMCHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMCHomeViewController.xib; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				10506E0E1DD8EC4C00CACE04 /* BMCWebManager.swift */,
+				104FD0661E21385D00A23C03 /* BMCAudioPlayer.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				10EE60EC1E11C5D400D71157 /* BlackMusicCenterTests.swift */,
+				104FD0681E21425500A23C03 /* BMCAudioPlayerTests.swift */,
 				104FD05F1E211B5500A23C03 /* BMCMusicFactoryTests.swift */,
 				104FD0641E212EAB00A23C03 /* BMCUIImagTests.swift */,
 				104FD05D1E20B1A200A23C03 /* BMCWebManagerTests.swift */,
@@ -442,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104FD0691E21425500A23C03 /* BMCAudioPlayerTests.swift in Sources */,
 				104FD0651E212EAB00A23C03 /* BMCUIImagTests.swift in Sources */,
 				10EE60ED1E11C5D400D71157 /* BlackMusicCenterTests.swift in Sources */,
 				104FD0601E211B5500A23C03 /* BMCMusicFactoryTests.swift in Sources */,
@@ -459,6 +466,7 @@
 				10BDB9CC1DDD00DE0076F62B /* BMTableViewCell.swift in Sources */,
 				10BDB9D51DDD0AD70076F62B /* BMCMusicFactory.swift in Sources */,
 				10506E0F1DD8EC4C00CACE04 /* BMCWebManager.swift in Sources */,
+				104FD0671E21385D00A23C03 /* BMCAudioPlayer.swift in Sources */,
 				104FD0631E212B0D00A23C03 /* BMCUIImage.swift in Sources */,
 				9D39B9AC1DD341AA00BC069C /* AppDelegate.swift in Sources */,
 			);

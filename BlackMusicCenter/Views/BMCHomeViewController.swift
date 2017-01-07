@@ -8,15 +8,14 @@
 
 import UIKit
 import SwiftyJSON
-import AVFoundation
 
 class BMCHomeViewController: BMCDefaultViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var player:AVAudioPlayer?
-    
     private let musicWeb: BMCWebManager = BMCWebManager.shared;
+    
+    private let audioPlayer: BMCAudioPlayer = BMCAudioPlayer.shared;
     
     @IBOutlet weak var musicArtistLabel: UILabel!
     @IBOutlet weak var musicTitleLabel: UILabel!
@@ -89,7 +88,7 @@ class BMCHomeViewController: BMCDefaultViewController {
                 case .success(let data):
                     print("Sucess Receive Data");
                     DispatchQueue.main.async(execute: {
-                        self.playSound(data: data);
+                        self.audioPlayer.play(data);
                         self.musicTitleLabel.text = music.title;
                         self.musicArtistLabel.text = music.artist;
                     })
@@ -105,11 +104,11 @@ class BMCHomeViewController: BMCDefaultViewController {
     }
     
     @IBAction func playButton(_ sender: UIButton) {
-        if let player = self.player {
-            if player.isPlaying {
-                player.pause();
+        if self.audioPlayer.isReady {
+            if self.audioPlayer.isPlaying {
+                self.audioPlayer.pause();
             } else {
-                player.play();
+                self.audioPlayer.play();
             }
         } else {
             let music:BMCMusic = self.musics[self.indexSong];
@@ -120,24 +119,6 @@ class BMCHomeViewController: BMCDefaultViewController {
     @IBAction func previewsButton(_ sender: UIButton) {
         let music:BMCMusic = self.decrement();
         self.setPlayMusic(music);
-    }
-
-    func playSound(data: Data) {
-        if let player = try? AVAudioPlayer(data: data) {
-            player.play();
-            player.numberOfLoops = 1;
-            player.currentTime = 10;
-            self.player  = player;
-            if let duration = self.player?.duration {
-                print("Duration : \(duration)");
-            }
-        }
-    }
-    
-    func pauseSound() {
-        if let player = self.player {
-            player.pause();
-        }
     }
 }
 
