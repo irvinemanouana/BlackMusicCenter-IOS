@@ -41,9 +41,11 @@ class BMCHomeViewController: BMCDefaultViewController {
                 }
                 
                 DispatchQueue.main.async(execute: {
-                    let music:BMCMusic = self.musics[0];
-                    self.setPreviewMusic(music);
-                    self.tableView.reloadData();
+                    if self.musics.count > 0 {
+                        let music:BMCMusic = self.musics[0];
+                        self.setPreviewMusic(music);
+                        self.tableView.reloadData();
+                    }
                 })
             }
         }
