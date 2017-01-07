@@ -165,17 +165,10 @@ extension BMCHomeViewController : UITableViewDelegate, UITableViewDataSource {
         let music:BMCMusic = self.musics[indexPath.row];
         
         cell.title.text = music.title;
-        //cell.artistLabel.text = music.artist;
-        if let url = URL(string: music.thumbnail) {
-            do {
-                let data = try Data(contentsOf: url);
-                cell.musicImage.image = UIImage(data: data);
-                cell.artistLabel.text = music.artist;
-                cell.genreLabel.text = music.genre;
-            }
-            catch {
-                print(error.localizedDescription);
-            }
+        cell.artistLabel.text = music.artist;
+        cell.genreLabel.text = music.genre;
+        if let image = UIImage.fromURL(url: URL(string: music.thumbnail)!) {
+            cell.musicImage.image = image;
         }
         
         return cell;
