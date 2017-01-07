@@ -25,26 +25,15 @@ class BMCWebManagerTests: XCTestCase {
     }
     
     func testGetMusicList() {
-        let ex = expectation(description: "Expecting a JSON data not nil")
-        
         self.webManager.getMusicList().responseJSON { (response) in
             XCTAssertNotNil(response.result.value);
             XCTAssertNil(response.result.error)
             let jsonResult = JSON(response.result.value);
             XCTAssertNotNil(jsonResult);
-            ex.fulfill()
-        }
-        
-        waitForExpectations(timeout: 10) { (error) in
-            if let error = error {
-                XCTFail("error: \(error)")
-            }
         }
     }
     
     func testDownloadMusic() {
-        let ex = self.expectation(description: "Expecting a JSON data not nil")
-        
         var progressDownload:Progress? = nil;
         
         let id:String = "58705cc8f0023f2e5873f525";
@@ -56,16 +45,8 @@ class BMCWebManagerTests: XCTestCase {
             }
             .responseJSON { (response) in
                 XCTAssertNotNil(response.result);
-                ex.fulfill()
+                XCTAssertEqual(progressDownload?.fractionCompleted, 1);
         }
-        
-        waitForExpectations(timeout: timeout) { (error) in
-            if let error = error {
-                XCTFail("error: \(error)")
-            }
-        }
-        
-        XCTAssertEqual(progressDownload?.fractionCompleted, 1);
     }
     
 }
