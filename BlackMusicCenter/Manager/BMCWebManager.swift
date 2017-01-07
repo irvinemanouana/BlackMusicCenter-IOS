@@ -38,13 +38,31 @@ class BMCWebManager {
         return execute(url);
     }
     
-    private func download(_ url: String) -> DownloadRequest {
-        print("New download : \(url)");
-        return Alamofire.download(url);
+    public func downloadMusic(_ music: BMCMusic, delegate: BMCWebDownloadMusic) -> DataRequest {
+        return self.downloadMusic(music)
+            .downloadProgress(closure: { (progress: Progress) in
+                delegate.progressDownload(progress: progress);
+            })
+            .responseData(completionHandler: { (response: DataResponse<Data>) in
+                switch response.result {
+                case .success(let data):
+                    delegate.successDownload(data: data);
+                case .failure:
+                    delegate.errorDownload(response: response);
+                }
+            })
     }
     
     private func execute(_ url: String) -> DataRequest {
         print("New request : \(url)");
         return Alamofire.request(url);
     }
+}
+
+public protocol BMCWebDownloadMusic : NSObjectProtocol {
+    
+    func progressDownload(progress: Progress);
+    func successDownload(data: Data);
+    func errorDownload(response: DataResponse<Data>);
+    
 }
