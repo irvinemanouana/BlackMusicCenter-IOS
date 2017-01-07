@@ -12,6 +12,7 @@ lane :blackmusiccenter do
   xcov(
     workspace: "BlackMusicCenter.xcworkspace",
     scheme: "BlackMusicCenter",
-    output_directory: "fastlane/xcov_output"
+    output_directory: "fastlane/xcov_output",
+    ignore_file_path: "fastlane/.xcovignore"
   )
 end
