@@ -38,6 +38,10 @@ class BMCAudioPlayerTests: XCTestCase {
                         self.audioPlayer.play(data);
                         XCTAssertTrue(self.audioPlayer.isReady);
                         XCTAssertTrue(self.audioPlayer.isPlaying);
+                        self.audioPlayer.pause();
+                        XCTAssertFalse(self.audioPlayer.isPlaying);
+                        self.audioPlayer.play();
+                        XCTAssertTrue(self.audioPlayer.isPlaying);
                     })
                 case .failure:
                     XCTFail()
@@ -56,6 +60,8 @@ class BMCAudioPlayerTests: XCTestCase {
                         self.audioPlayer.pause();
                         XCTAssertTrue(self.audioPlayer.isReady);
                         XCTAssertFalse(self.audioPlayer.isPlaying);
+                        self.audioPlayer.play();
+                        XCTAssertTrue(self.audioPlayer.isPlaying);
                     })
                 case .failure:
                     XCTFail()

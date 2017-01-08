@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import BlackMusicCenter
 
 class BlackMusicCenterUITests: XCTestCase {
         
@@ -24,8 +25,27 @@ class BlackMusicCenterUITests: XCTestCase {
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
+    func testPlayMusic() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let buttons = XCUIApplication().buttons;
+        XCTAssertEqual(buttons.count, 3);
+        
+        for button in buttons.allElementsBoundByIndex {
+            button.tap();
+        }
+        
+        let table = XCUIApplication().tables.element(boundBy: 0);
+        XCTAssertTrue(table.exists);
+        
+        let cells = table.cells;
+        print("Count cells : \(cells.count)");
+        for cell in cells.allElementsBoundByIndex {
+            XCTAssertEqual(cell.staticTexts.count, 3);
+            cell.tap();
+        }
+    }
 }
