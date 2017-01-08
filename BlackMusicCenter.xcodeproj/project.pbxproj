@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1046BD161E22686500D4D4D8 /* BlackMusicCenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1046BD151E22686500D4D4D8 /* BlackMusicCenterUITests.swift */; };
 		104FD05E1E20B1A200A23C03 /* BMCWebManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FD05D1E20B1A200A23C03 /* BMCWebManagerTests.swift */; };
 		104FD0601E211B5500A23C03 /* BMCMusicFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FD05F1E211B5500A23C03 /* BMCMusicFactoryTests.swift */; };
 		104FD0631E212B0D00A23C03 /* BMCUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FD0621E212B0D00A23C03 /* BMCUIImage.swift */; };
@@ -30,10 +31,18 @@
 		9DA36AB01DED73D300C31309 /* next-track-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA36AAE1DED73D300C31309 /* next-track-button.png */; };
 		9DA36AB11DED73D300C31309 /* previous-track.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA36AAF1DED73D300C31309 /* previous-track.png */; };
 		A954015CAA2EE30051C1C559 /* Pods_BlackMusicCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7490D730A1953F28804B5563 /* Pods_BlackMusicCenter.framework */; };
+		B70931F91B6D8A87A2EA9133 /* Pods_BlackMusicCenterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1743A3EDB365DCE09E81C7 /* Pods_BlackMusicCenterUITests.framework */; };
 		F8894D21F8AE2AA8A69B32AF /* Pods_BlackMusicCenterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B2760AFE28BC82D2FDE34C /* Pods_BlackMusicCenterTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1046BD181E22686500D4D4D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D39B9A01DD341AA00BC069C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D39B9A71DD341AA00BC069C;
+			remoteInfo = BlackMusicCenter;
+		};
 		10EE60EF1E11C5D400D71157 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D39B9A01DD341AA00BC069C /* Project object */;
@@ -44,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1046BD131E22686400D4D4D8 /* BlackMusicCenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackMusicCenterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1046BD151E22686500D4D4D8 /* BlackMusicCenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackMusicCenterUITests.swift; sourceTree = "<group>"; };
+		1046BD171E22686500D4D4D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		104FD05D1E20B1A200A23C03 /* BMCWebManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCWebManagerTests.swift; sourceTree = "<group>"; };
 		104FD05F1E211B5500A23C03 /* BMCMusicFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCMusicFactoryTests.swift; sourceTree = "<group>"; };
 		104FD0621E212B0D00A23C03 /* BMCUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCUIImage.swift; sourceTree = "<group>"; };
@@ -62,6 +74,7 @@
 		10EE60EA1E11C5D400D71157 /* BlackMusicCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackMusicCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10EE60EC1E11C5D400D71157 /* BlackMusicCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackMusicCenterTests.swift; sourceTree = "<group>"; };
 		10EE60EE1E11C5D400D71157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53DF732CF5012E7C80FFCE9A /* Pods-BlackMusicCenterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMusicCenterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackMusicCenterUITests/Pods-BlackMusicCenterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D074D60393AF4000CF96A72 /* Pods-BlackMusicCenterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMusicCenterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackMusicCenterTests/Pods-BlackMusicCenterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7490D730A1953F28804B5563 /* Pods_BlackMusicCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackMusicCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		882B0DDEC58A5D9D85C95F2D /* Pods-BlackMusicCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMusicCenter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackMusicCenter/Pods-BlackMusicCenter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,11 +87,21 @@
 		9D39B9B71DD341AA00BC069C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DA36AAE1DED73D300C31309 /* next-track-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next-track-button.png"; sourceTree = "<group>"; };
 		9DA36AAF1DED73D300C31309 /* previous-track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "previous-track.png"; sourceTree = "<group>"; };
+		B63E223A66D4914A4C351C58 /* Pods-BlackMusicCenterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMusicCenterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackMusicCenterUITests/Pods-BlackMusicCenterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C3B2760AFE28BC82D2FDE34C /* Pods_BlackMusicCenterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackMusicCenterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2717B0023E9FBB6ED30834 /* Pods-BlackMusicCenterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMusicCenterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackMusicCenterTests/Pods-BlackMusicCenterTests.release.xcconfig"; sourceTree = "<group>"; };
+		EB1743A3EDB365DCE09E81C7 /* Pods_BlackMusicCenterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackMusicCenterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1046BD101E22686400D4D4D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70931F91B6D8A87A2EA9133 /* Pods_BlackMusicCenterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10EE60E71E11C5D400D71157 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1046BD141E22686500D4D4D8 /* BlackMusicCenterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1046BD151E22686500D4D4D8 /* BlackMusicCenterUITests.swift */,
+				1046BD171E22686500D4D4D8 /* Info.plist */,
+			);
+			path = BlackMusicCenterUITests;
+			sourceTree = "<group>";
+		};
 		104FD0611E212AE800A23C03 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +208,7 @@
 			children = (
 				7490D730A1953F28804B5563 /* Pods_BlackMusicCenter.framework */,
 				C3B2760AFE28BC82D2FDE34C /* Pods_BlackMusicCenterTests.framework */,
+				EB1743A3EDB365DCE09E81C7 /* Pods_BlackMusicCenterUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,6 +228,7 @@
 			children = (
 				9D39B9AA1DD341AA00BC069C /* BlackMusicCenter */,
 				10EE60EB1E11C5D400D71157 /* BlackMusicCenterTests */,
+				1046BD141E22686500D4D4D8 /* BlackMusicCenterUITests */,
 				9D39B9A91DD341AA00BC069C /* Products */,
 				E60CD08907BBFA37EBCCA88E /* Pods */,
 				24D35044086D5FA966047828 /* Frameworks */,
@@ -206,6 +240,7 @@
 			children = (
 				9D39B9A81DD341AA00BC069C /* BlackMusicCenter.app */,
 				10EE60EA1E11C5D400D71157 /* BlackMusicCenterTests.xctest */,
+				1046BD131E22686400D4D4D8 /* BlackMusicCenterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,6 +271,8 @@
 				8EACF73E13258E9A2911B2B6 /* Pods-BlackMusicCenter.release.xcconfig */,
 				5D074D60393AF4000CF96A72 /* Pods-BlackMusicCenterTests.debug.xcconfig */,
 				DB2717B0023E9FBB6ED30834 /* Pods-BlackMusicCenterTests.release.xcconfig */,
+				53DF732CF5012E7C80FFCE9A /* Pods-BlackMusicCenterUITests.debug.xcconfig */,
+				B63E223A66D4914A4C351C58 /* Pods-BlackMusicCenterUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -243,6 +280,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1046BD121E22686400D4D4D8 /* BlackMusicCenterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1046BD1A1E22686500D4D4D8 /* Build configuration list for PBXNativeTarget "BlackMusicCenterUITests" */;
+			buildPhases = (
+				D514BD0A8156228E3BEA7B14 /* [CP] Check Pods Manifest.lock */,
+				1046BD0F1E22686400D4D4D8 /* Sources */,
+				1046BD101E22686400D4D4D8 /* Frameworks */,
+				1046BD111E22686400D4D4D8 /* Resources */,
+				974D7074F217AAE8C78260BC /* [CP] Embed Pods Frameworks */,
+				0A400D161E1C1D26CC86EA2B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1046BD191E22686500D4D4D8 /* PBXTargetDependency */,
+			);
+			name = BlackMusicCenterUITests;
+			productName = BlackMusicCenterUITests;
+			productReference = 1046BD131E22686400D4D4D8 /* BlackMusicCenterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		10EE60E91E11C5D400D71157 /* BlackMusicCenterTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10EE60F31E11C5D400D71157 /* Build configuration list for PBXNativeTarget "BlackMusicCenterTests" */;
@@ -291,9 +349,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Manouana;
 				TargetAttributes = {
+					1046BD121E22686400D4D4D8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9D39B9A71DD341AA00BC069C;
+					};
 					10EE60E91E11C5D400D71157 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -321,11 +384,19 @@
 			targets = (
 				9D39B9A71DD341AA00BC069C /* BlackMusicCenter */,
 				10EE60E91E11C5D400D71157 /* BlackMusicCenterTests */,
+				1046BD121E22686400D4D4D8 /* BlackMusicCenterUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1046BD111E22686400D4D4D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10EE60E81E11C5D400D71157 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,6 +422,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0A400D161E1C1D26CC86EA2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackMusicCenterUITests/Pods-BlackMusicCenterUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		12C16481202313423942FA93 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,6 +497,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackMusicCenter/Pods-BlackMusicCenter-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		974D7074F217AAE8C78260BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackMusicCenterUITests/Pods-BlackMusicCenterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C72C70759FDDC5536DD964BB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,6 +525,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackMusicCenterTests/Pods-BlackMusicCenterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D514BD0A8156228E3BEA7B14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E0642263882300FDDEA16869 /* [CP] Check Pods Manifest.lock */ = {
@@ -444,6 +560,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1046BD0F1E22686400D4D4D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1046BD161E22686500D4D4D8 /* BlackMusicCenterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10EE60E61E11C5D400D71157 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,6 +599,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1046BD191E22686500D4D4D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D39B9A71DD341AA00BC069C /* BlackMusicCenter */;
+			targetProxy = 1046BD181E22686500D4D4D8 /* PBXContainerItemProxy */;
+		};
 		10EE60F01E11C5D400D71157 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9D39B9A71DD341AA00BC069C /* BlackMusicCenter */;
@@ -494,10 +623,41 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1046BD1B1E22686500D4D4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53DF732CF5012E7C80FFCE9A /* Pods-BlackMusicCenterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = BlackMusicCenterUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicolas.paradise.fr.BlackMusicCenterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BlackMusicCenter;
+			};
+			name = Debug;
+		};
+		1046BD1C1E22686500D4D4D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63E223A66D4914A4C351C58 /* Pods-BlackMusicCenterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = BlackMusicCenterUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicolas.paradise.fr.BlackMusicCenterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BlackMusicCenter;
+			};
+			name = Release;
+		};
 		10EE60F11E11C5D400D71157 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D074D60393AF4000CF96A72 /* Pods-BlackMusicCenterTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BlackMusicCenterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -513,6 +673,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB2717B0023E9FBB6ED30834 /* Pods-BlackMusicCenterTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BlackMusicCenterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -625,7 +786,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = Q2G63B87TD;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = BlackMusicCenter/Info.plist;
@@ -644,7 +805,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = Q2G63B87TD;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = BlackMusicCenter/Info.plist;
@@ -660,6 +821,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1046BD1A1E22686500D4D4D8 /* Build configuration list for PBXNativeTarget "BlackMusicCenterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1046BD1B1E22686500D4D4D8 /* Debug */,
+				1046BD1C1E22686500D4D4D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		10EE60F31E11C5D400D71157 /* Build configuration list for PBXNativeTarget "BlackMusicCenterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -35,6 +35,16 @@
                BlueprintIdentifier = "10EE60E91E11C5D400D71157"
                BuildableName = "BlackMusicCenterTests.xctest"
                BlueprintName = "BlackMusicCenterTests"
+               ReferencedContainer = "container:BlackMusicCenter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1046BD121E22686400D4D4D8"
+               BuildableName = "BlackMusicCenterUITests.xctest"
+               BlueprintName = "BlackMusicCenterUITests"
                ReferencedContainer = "container:BlackMusicCenter.xcodeproj">
             </BuildableReference>
          </TestableReference>
